@@ -10,7 +10,6 @@ const Footer = () => {
       <p className='icons'>
         <AiFillInstagram/>
         <AiOutlineTwitter/>
-
       </p> 
     </div>
   )
