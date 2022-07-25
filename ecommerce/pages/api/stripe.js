@@ -10,7 +10,7 @@ export default async function handler(req, res) {
             mode: 'payment',
             payment_method_types: ['card'],
             billing_address_collection: 'auto',
-            shipping_options:[
+            shipping_options: [
                 {shipping_rate: 'sshr_1LPKmGJyeUcPpXdKunxT99TE' },
                 
             ],
@@ -35,8 +35,8 @@ export default async function handler(req, res) {
                   }
             } ),
             
-            success_url: `${req.headers.origin}/?success=true`,
-            cancel_url:`${req.headers.origin}/?canceled=true `,
+            success_url: `${req.headers.origin}/success`,
+            cancel_url:`${req.headers.origin}/canceled`,
         }
 
 
